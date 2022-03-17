@@ -1,6 +1,11 @@
 import * as React from "react";
 import { graphql, StaticQuery } from "gatsby";
 import Layout from "../components/Layout";
+import Hero from "components/Hero";
+import About from "components/About";
+import Featured from "components/Featured";
+import OtherProjects from "components/OtherProjects";
+import Contact from "components/Contact";
 // import Hero from "../components/Hero/Hero"
 // import About from "../components/About/About"
 // import Featured from "../components/Featured/Featured"
@@ -27,7 +32,12 @@ const IndexPage = () => {
         query={query}
         render={(data) => (
           <Layout>
-            <h1>{data.allStrapiBlog.nodes[0].data[0].id}</h1>
+            <Hero />
+            <About />
+            <Featured />
+            <OtherProjects />
+            <Contact />
+            {/* <h1>{data.allStrapiBlog.nodes[0].data[0].id}</h1> */}
           </Layout>
         )}
       />

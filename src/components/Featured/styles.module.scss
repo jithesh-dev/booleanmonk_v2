@@ -1,0 +1,63 @@
+/* Featured Projects */
+.works {
+  margin-bottom: 180px;
+  margin-top: 100px;
+}
+.projectContainer {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  .worksExpWrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .worksExp {
+    /* text-align: right; */
+
+    position: relative;
+    line-height: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -100%;
+      top: 50%;
+      height: 50%;
+      width: 100%;
+      /* background-color: red; */
+      border: 1px solid var(--clr-bg-light);
+      border-right: none;
+      border-bottom: none;
+    }
+  }
+}
+
+.recArrowRight {
+  left: 60px;
+}
+
+.recCarousel {
+  position: relative;
+}
+.recArrow {
+  background: #d6685314 !important;
+
+  border-radius: 0 !important;
+  position: absolute;
+  z-index: 9;
+  bottom: -60px;
+  &:focus,
+  &:hover {
+    background: var(--clr-accent) !important;
+    color: black !important;
+  }
+}
+
+.divCarousel div {
+  user-select: unset !important;
+  &::focus {
+    outline: none !important;
+    border: none !important;
+  }
+}

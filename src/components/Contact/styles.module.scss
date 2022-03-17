@@ -1,0 +1,50 @@
+/* Contact */
+
+.contactContainer {
+  max-width: 800px;
+}
+.contactForm {
+  margin-top: 40px;
+}
+.formControl {
+  display: block;
+  margin-bottom: 20px;
+  background: none;
+  color: var(--clr-text-headings);
+  padding: 1em;
+  width: 100%;
+  box-shadow: none;
+  border: 1px solid var(--clr-bg-light);
+}
+.contactExpander {
+  position: relative;
+  line-height: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 50%;
+    height: 50%;
+    width: 100%;
+    /* background-color: red; */
+    border: 1px solid var(--clr-bg-light);
+    border-right: none;
+    border-bottom: none;
+  }
+}
+
+.submitBtn svg {
+  width: 15px;
+  fill: white;
+  transition: fill 0.2s ease-in-out;
+  margin-right: 15px;
+}
+.submitBtn:hover svg {
+  fill: #000;
+}
+
+@media only screen and (min-width: 1200px) {
+  .contactContainer {
+    margin: 0 auto;
+  }
+}
