@@ -6,14 +6,8 @@ import About from "components/About";
 import Featured from "components/Featured";
 import OtherProjects from "components/OtherProjects";
 import Contact from "components/Contact";
-// import Hero from "../components/Hero/Hero"
-// import About from "../components/About/About"
-// import Featured from "../components/Featured/Featured"
-// import OtherProjects from "../components/OtherProjects/OtherProjects"
-// import Contact from "../components/Contact/Contact"
-// import SimpleReactLightbox from "simple-react-lightbox"
-// import Head from "../components/Head/Head"
-// markup
+import Head from "components/Head";
+
 const IndexPage = () => {
   const query = graphql`
     query MyQuery {
@@ -32,6 +26,7 @@ const IndexPage = () => {
         query={query}
         render={(data) => (
           <Layout>
+            <Head title="Home" />
             <Hero />
             <About />
             <Featured />

@@ -3,6 +3,7 @@ import Header from "components/Header";
 import "styles/common.scss";
 import * as styles from "./styles.module.scss";
 import Footer from "components/Footer";
+import ScrollToTop from "components/ScrollToTop";
 
 // import Header from "../Header/Header"
 // import Footer from "../Footer/Footer"
@@ -43,6 +44,7 @@ const Layout: FC = ({ children }) => {
         <Header />
         {children}
         <Footer />
+        <ScrollToTop showBelow={400} />
       </div>
     </div>
   );
