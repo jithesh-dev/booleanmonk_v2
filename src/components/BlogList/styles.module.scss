@@ -1,0 +1,9 @@
+.blogList {
+  display: flex;
+
+  .blogItem {
+    & + .blogItem {
+      margin-left: 2rem;
+    }
+  }
+}
